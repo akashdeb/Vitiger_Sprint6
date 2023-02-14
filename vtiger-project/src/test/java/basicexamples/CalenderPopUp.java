@@ -12,7 +12,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class CalenderPopUp {
 	@Test
 	public void demo() {
-		String month = "March";
+		String month = "June";
 		String day = "30";
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
@@ -23,10 +23,16 @@ public class CalenderPopUp {
 		driver.findElement(By.xpath("//span[text()='DEPARTURE']")).click();
 		
 		driver.findElement(By.xpath("//span[@class=\"ic_circularclose_grey\"]")).click();
-		
-		driver.findElement(By.xpath("//div[text()='"+month+" 2023']/ancestor::div[@class='DayPicker-Month']/descendant::p[text()='"+day+"']")).click();
-		
-		
+		for(;;) {
+			try{
+				driver.findElement(By.xpath("//div[text()='"+month+" 2023']/ancestor::div[@class='DayPicker-Month']/descendant::p[text()='"+day+"']")).click();
+				break;
+			}
+			catch (Exception e) {
+				
+				driver.findElement(By.xpath("//span[@aria-label='Next Month']")).click();
+			}
+		}
 	}
 
 }

@@ -17,9 +17,7 @@ public class LoginPage {
 	@FindBy(name="user_name")
 	WebElement usernameTextField;
 	
-//	@FindBy(name="user_password")
-	
-	@FindBys({@FindBy(xpath = "//input[@type='password']"), @FindBy(name="user_password")})
+	@FindBy(name="user_password")
 	private WebElement passwordTextField;
 	
 	@FindBy(id="submitButton")

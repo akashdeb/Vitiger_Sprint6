@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="basicexamples.CalenderPopUp">
+      <class name="products_module_Test.CreateProductByVendorDetails">
         <methods>
-          <include name="demo"/>
+          <include name="createProductByVendorDetails"/>
+          <include name="bmConfig"/>
+          <include name="bcConfiguration"/>
+          <include name="bsConfig"/>
         </methods>
-      </class> <!-- basicexamples.CalenderPopUp -->
+      </class> <!-- products_module_Test.CreateProductByVendorDetails -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -59,7 +59,7 @@ public class BaseClass {
 		
 	}
 	
-/*	@AfterMethod
+	@AfterMethod
 	public void amConfig() {
 		HomePage home=new HomePage(driver);
 		home.signOutAction();
@@ -74,5 +74,5 @@ public class BaseClass {
 	public void asConfig() throws SQLException {
 		connection.close();
 	}
-*/
+
 }

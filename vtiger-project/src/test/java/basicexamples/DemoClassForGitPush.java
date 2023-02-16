@@ -7,7 +7,7 @@ public class DemoClassForGitPush {
 	@Test
 	public void demoTest() {
 		
-		System.out.println("Demo push Git conflict");
+		System.out.println("Demo push Git conflict change in master");
 		
 	}
 

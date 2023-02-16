@@ -54,7 +54,7 @@ public class CreateProductByVendorDetails extends BaseClass {
 		
 		//Verifing Vendor is created or not
 		Assert.assertTrue(actualVendorInformation.contains(expectedVendorInformation), "Vendor information has not been verified");
-		System.out.println("Vendor information has been verified");
+		System.out.println("Vendor information has not been verified");
 		
 		//Creating Products
 		home.clickOnProducts();

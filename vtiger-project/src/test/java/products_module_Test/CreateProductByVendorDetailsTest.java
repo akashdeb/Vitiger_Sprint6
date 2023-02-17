@@ -79,8 +79,6 @@ public class CreateProductByVendorDetailsTest extends BaseClass {
 		
 		//Verifying product is created or not
 		Assert.assertTrue(actualProductName.contains("Toyota-V12"), "Product Name has not been verified");
-		System.out.println("Product Name has been verified");
-		
 	}
 
 }

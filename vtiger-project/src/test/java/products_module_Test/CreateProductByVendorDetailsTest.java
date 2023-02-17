@@ -23,10 +23,10 @@ import vtiger.pomRepository.VendorsPage;
  * @author Akash
  *
  */
-public class CreateProductByVendorDetails extends BaseClass {
+public class CreateProductByVendorDetailsTest extends BaseClass {
 	
 	@Test(retryAnalyzer = vitiger.genericUtility.RetryAnalyserImplementationClass.class)
-	public void createProductByVendorDetails() throws EncryptedDocumentException, IOException {
+	public void createProductByVendorDetailsTest() throws EncryptedDocumentException, IOException {
 		
 		//Test Scripts Datas
 		String expectedVendorInformation = "Exide";

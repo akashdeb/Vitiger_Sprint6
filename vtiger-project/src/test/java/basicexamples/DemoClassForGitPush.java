@@ -10,7 +10,9 @@ public class DemoClassForGitPush {
 
 		System.out.println("Demo push Git conflict changes from TE2 change 2");		
 		
-		System.out.println("Demo push Git conflict changes from Master change 2");		
+		System.out.println("Demo push Git conflict changes from Master change 2");
+		System.out.println("Demo push Git conflict changes from Master change 3");		
+
 	}
 
 }
